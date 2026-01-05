@@ -14,3 +14,15 @@ jobs:
         run: npm ci
       - name: Run tests
         run: npm test
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v6
+      - name: Install dependencies
+        uses: npm ci
+      - name: Build Project
+        run: npm run Build
+      - name: deploy
+        run: ech Deploying...
+        
