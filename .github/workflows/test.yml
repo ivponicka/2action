@@ -20,7 +20,7 @@ jobs:
       - name: Get code
         uses: actions/checkout@v6
       - name: Build Project
-        run: npm run Build
+        run: npm run build
       - name: deploy
         run: ech Deploying...
         
