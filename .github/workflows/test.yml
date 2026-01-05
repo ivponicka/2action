@@ -19,8 +19,6 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v6
-      - name: Install dependencies
-        uses: npm ci
       - name: Build Project
         run: npm run Build
       - name: deploy
